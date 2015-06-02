@@ -1,5 +1,7 @@
 /// -*- tab-width: 4; Mode: C++; c-basic-offset: 4; indent-tabs-mode: nil -*-
 
+#if SPORT_ENABLED == ENABLED
+
 /*
  * control_sport.pde - init and run calls for sport flight mode
  */
@@ -98,3 +100,5 @@ static void sport_run()
         pos_control.update_z_controller();
     }
 }
+
+#endif  // SPORT_ENABLED == ENABLED

@@ -1,5 +1,7 @@
 /// -*- tab-width: 4; Mode: C++; c-basic-offset: 4; indent-tabs-mode: nil -*-
 
+#if ACRO_ENABLED == ENABLED
+
 /*
  * control_acro.pde - init and run calls for acro flight mode
  */
@@ -145,3 +147,5 @@ static void get_pilot_desired_angle_rates(int16_t roll_in, int16_t pitch_in, int
     pitch_out = rate_bf_request.y;
     yaw_out = rate_bf_request.z;
 }
+
+#endif  // ACRO_ENABLED == ENABLED
