@@ -1,5 +1,7 @@
 /// -*- tab-width: 4; Mode: C++; c-basic-offset: 4; indent-tabs-mode: nil -*-
 
+#if FLIP_ENABLED == ENABLED
+
 /*
  * control_flip.pde - init and run calls for flip flight mode
  *      original implementation in 2010 by Jose Julio
@@ -173,3 +175,5 @@ static void flip_run()
     // output pilot's throttle without angle boost
     attitude_control.set_throttle_out(throttle_out, false);
 }
+
+#endif  // FLIP_ENABLED == ENABLED

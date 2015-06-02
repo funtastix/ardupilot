@@ -688,6 +688,19 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
+// Acro, Sport and Flip parameter defaults
+//
+#ifndef ACRO_ENABLED
+ # define ACRO_ENABLED               ENABLED // PosHold flight mode enabled by default
+#endif
+#ifndef SPORT_ENABLED
+ # define SPORT_ENABLED               ENABLED // PosHold flight mode enabled by default
+#endif
+#ifndef FLIP_ENABLED
+ # define FLIP_ENABLED               ENABLED // PosHold flight mode enabled by default
+#endif
+
+//////////////////////////////////////////////////////////////////////////////
 // PosHold parameter defaults
 //
 #ifndef POSHOLD_ENABLED

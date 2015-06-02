@@ -161,6 +161,7 @@ static void do_aux_switch_function(int8_t ch_function, uint8_t ch_flag)
     }
 
     switch(tmp_function) {
+#if FLIP_ENABLED == ENABLED
         case AUX_SWITCH_FLIP:
             // flip if switch is on, positive throttle and we're actually flying
             if(ch_flag == AUX_SWITCH_HIGH) {
@@ -169,6 +170,7 @@ static void do_aux_switch_function(int8_t ch_function, uint8_t ch_flag)
                 flip_stop();
             }
             break;
+#endif
 
         case AUX_SWITCH_SIMPLE_MODE:
             // low = simple mode off, middle or high position turns simple mode on
